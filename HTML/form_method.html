@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="http://localhost/method.php" method="post">
+            <input type="text" name="id">
+            <input type="password" name="pwd">
+            <input type="submit">
+        </form>
+    </body>
+</html>
+
+
+<!-- get방식과 post방식 => get방식은 url을 통해서 정보를 전달하는 방식이고 post방식은 (url이 아닌) 정보를 숨겨서 전달하는 방식. form 태그를 이용한 정보 전달은 거의 대부분 post 방식을 사용함 -->
+<!-- get 방식 결과값 : http://localhost/method.php?id=kong&pwd=1234 -->
+<!-- post 방식 결과값 : http://localhost/method.php -->

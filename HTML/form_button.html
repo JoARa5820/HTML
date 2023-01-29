@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="http://localhost/form.php">
+            <input type="text">
+            <input type="submit" value = "전송">
+            <input type="button" value = "버튼" onclick="alert('hello world')">
+            <input type="reset">
+        </form>
+    </body>
+</html>
+
+
+<!-- <input type="submit" value = "전송"> : 기본 텍스트는 "제출"이지만, value값을 통해 텍스트를 "전송"으로 바꿀 수 있음 -->
+<!-- <input type="button" value = "버튼"> : submit(전송)버튼을 누르면 페이지가 바뀌지만, button 버튼은 눌러도 페이지가 바뀌지 않음  -->
+<!-- input type="button" value = "버튼" : html 자체로는 사용할 수 없는 속성임 -->
+<!-- input type="button" value = "버튼" onclick="alert('hello world')" : onclick는 html의 속성이고, alert('hello world')는 자바스크립트의 언어
+     버튼을 클릭하면 hello world라는 경고문과 함께 경고창이 뜸 / 자바스크립트가 사용될 때 활용도가 생기는 버튼 -->
+<!-- <input type="reset"> : 리셋이 속해있는 form 태그 아래의 사용자가 입력한 모든 정보(<input type="text">)가 초기화됨 -->

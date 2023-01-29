@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="http://localhost/color.php">
+
+            <h1>색상</h1>
+            <select name="color">
+                <option value="red">붉은색</option>
+                <option value="black">검은색</option>
+                <option value="blue">파란색</option>
+            </select>
+
+            <h1>색상2(다중선택)</h1>
+            <select name="color2" multiple>
+                <option value="red">붉은색</option>
+                <option value="black">검은색</option>
+                <option value="blue">파란색</option>
+            </select>
+
+            <input type="submit">
+        </form>
+    </body>
+</html>
+
+
+<!-- Dropdown List : 제한된 공간 안에서 여러개의 선택지를 선택할 수 있도록 하는 기능 -->
+<!-- input type="submit" : 제출 버튼 생성 -->
+<!-- select name="color" : select가 어떤 이름으로 전송될지 => http://localhost/color.php?color=붉은색 -->
+<!-- option value="red" : http://localhost/color.php?color=red : 보기에는 붉은색이였지만, 실제로 전송되는 정보는 red임 -->
+<!-- 색상2(다중선택) : 컨트롤 키를 누른 상태로 여러개 선택 => http://localhost/color.php?color=red&color2=black&color2=blue -->
